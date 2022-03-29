@@ -15,7 +15,7 @@ model User {
   updatedAt DateTime @updatedAt
 
   password Password?
-  notes    Note[]
+  notecards Notecard[]
 }
 
 model Password {
@@ -25,10 +25,10 @@ model Password {
   userId String @unique
 }
 
-model Note {
+model Notecard {
   id    String @id @default(cuid())
-  title String
-  body  String
+  sideOne String
+  sideTwo  String
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
