@@ -9,5 +9,3 @@ node_modules
 /postgres-data
 
 /app/styles/tailwind.css
-
-.DS_Store
